@@ -1,7 +1,66 @@
 html {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: absolute;
+  max-width: 50em;
+  padding: 0 1rem;
+  bottom: 1rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  font-size: 2rem;
+  font-style: italic;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+.banner-content h2,
+.banner-content p {
+  margin: 0;
+}
+
+.btn-big {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: .4em .75em .3em;
+  border-radius: 8px;
+  border-width: 3px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
 }
