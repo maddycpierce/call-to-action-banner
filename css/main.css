@@ -12,6 +12,15 @@ body {
   margin: 0;
 }
 
+.div-image {
+  position: absolute;
+  max-width: 50em;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
 .banner {
   position: relative;
   max-height: 500px;
@@ -21,10 +30,11 @@ body {
 .banner-content {
   position: absolute;
   max-width: 50em;
-  bottom: 1rem;
+  top: 50%;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
+  overflow: hidden;
 }
 
 .img-flex {
@@ -32,9 +42,18 @@ body {
   width: 100%;
 }
 
-.img-circle {
+.left {
+  width: 30%;
   float: left;
-  display: inline-block;
+}
+
+.right {
+  float: right;
+  width: 65%;
+}
+
+.img-circle {
+  width: 100%;
 }
 
 h1 {
@@ -57,14 +76,11 @@ p {
   margin: 0;
 }
 
-div {
-  padding: .5rem;
-}
-
 .btn {
   display: inline-block;
   font-size: 1.125rem;
   text-decoration: none;
+  float: left;
 }
 
 a {
@@ -80,6 +96,7 @@ a {
   background-color: #000;
 }
 
-.btn-big:hover {
-  background-color: #666;
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
 }
